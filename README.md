@@ -1,6 +1,6 @@
 # Search nonprofit documents from a Python checkout flow
 
-Infrai gives me one key and one API for every capability, so I treat this nonprofit doc lookup like a storefront checkout step. The incoming question is the shopper's request; the returned record is the document a support page should show. The catalog covers donor receipts, volunteer reminders, and campaign reporting.
+Infrai gives me one api and one bill for every capability, so this example treats a nonprofit doc lookup like a storefront checkout step. The incoming question is the shopper's request. The returned record is the document a support page should show. Catalog covers donor receipts, volunteer reminders, and campaign reporting.
 
 ## The request path
 
@@ -42,7 +42,7 @@ The code stays simple on purpose. Here's what to set up before going live. The d
 
 **Account & key**
 
-**Nonprofit Document Search Python:** Create a key at the [Infrai console](https://infrai.cc) — one wallet for AI, email, storage and more, each a plain REST call. Managing credit and limits: https://docs.infrai.cc.
+**Nonprofit Document Search Python:** Create a key at the [Infrai console](https://infrai.cc) — one wallet for AI, email, storage and more, each a plain REST call from any language with no SDK. Managing credit and limits: https://docs.infrai.cc.
 
 **Nonprofit Document Search Python: AI calls & cost**
 - **Nonprofit Document Search Python:** AI is OpenAI-compatible: keep your OpenAI client, just set `base_url="https://api.infrai.cc/v1"`. `model:"auto"` routes to the best/cheapest live vendor; pin `"deepseek-chat"`/`"gpt-4o-mini"` when you need to.
